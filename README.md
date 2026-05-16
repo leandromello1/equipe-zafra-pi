@@ -26,7 +26,12 @@ Projeto Interdisciplinar do curso de Desenvolvimento de Software Multiplataforma
 Para cada semestre, do 1º ao 6º, iremos utilizar este template para documentar o PI - incrementalmente.
 
 # 1. Introdução
-(Contextualização, Justificativa (porquê?)
+O Projeto descreve o desenvolvimento de um portal acadêmico para a Escola Zafra, fundada em 2025. O projeto visa disponibilizar ferramentas para a criação auxiliar a gestão da escola e a captação e alunos.
+Como uma instituição de fundação recente, a Escola Zafra identifica a necessidade estratégica de implementar uma infraestrutura tecnológica própria, tornando essencial a transição para uma plataforma digital personalizada.
+Com base nisso, o sistema busca:
+- Facilitar o processo de inscrição e cadastro de alunos
+- Oferecer ferramentas para a criação e gerenciamento de atividades acadêmicas, questionários e testes vocacionais
+- ⁠Providenciar um canal de comunicação entre alunos e o corpo docente da escola
 
 ## • Objetivos
 Criar uma plataforma website que seja gratuita e voltada à educação, captação e inclusão de pessoas, realocando-as para o mercado de trabalho.  Criação de um site básico, bem elaborado, responsivo e funcional para poder gerenciar todas as etapas da capacitação.
