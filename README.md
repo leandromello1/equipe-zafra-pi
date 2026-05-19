@@ -1,5 +1,14 @@
 # Equipe-Zafra-PI
 Projeto Interdisciplinar do curso de Desenvolvimento de Software Multiplataforma - Fatec Jahu
+<br/><br/>
+
+<p>Grupo 7</p>
+<p>Ana Luisa Zaratin Fria</p>
+<p>Arthur Canzian</p>
+<p>Leandro Prado de Mello Gusmão</p>
+<p>Luiz Henrique de Araújo</p>
+<p>Renan de Azevedo e Silva</p>
+<br/><br/>
 
 <p align="left" style="font-size:28px;"><strong><em>Documentação do PI</em></strong></p>
 <details>
