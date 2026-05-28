@@ -212,7 +212,19 @@ Estrutura de custos:
 Não haverá custos pois o trabalho é voluntário e os recursos são fornecidos pela Fatec.
 
 # 9. Design
-(Paleta de cor, Tipografia, Logo, Wireframes, Modelo de navegação)
+Paleta de cor:
+Azul escuro (#1E3983)
+Azul marinho (#0F2563)
+Ciano (#6DABBC)
+Ciano Escuro (#60A1AF)
+Azul bebê (#E7F0F9)
+Cinza (#CFCFCF)
+Branco (#FFFFFF)
+Preto (#000000)
+
+Tipografia:
+Instrument Sans
+Roboto
 
 # 10. Protótipo
 (Gere um protótipo funcional na ferramenta que se sentir mais confortável (Figma, por exemplo) e apresente aqui, indicando o link).
