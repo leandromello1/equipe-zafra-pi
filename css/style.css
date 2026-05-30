@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0  rgba(90, 83, 83, 0.25);
+}
+
+.logo-texto {
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #1E3983;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links .btn-login {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: #1E3983;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.nav-links .btn-login:hover {
+    background-color: #172b5c;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    flex: 1;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+.titulo {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 2.8rem;
+    color: #1E3983;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.destaque {
+    color: #60A1AF;
+}
+
+.parágrafo {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #1E3983;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+}
+
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 40px 0;
+    width: 616px;
+    height: 168px;
+}
+
+.diferencial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.diferencial p {
+    font-family: 'Instrument Sans', sans-serif;
+    margin-top: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #213d80;
+    line-height: 1.3;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.botao-um, .botao-dois {
+    font-family: 'Instrument Sans', sans-serif;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.botao-um {
+    background-color: #1E3983;
+    color: white;
+    border: none;
+}
+
+.botao-um:hover {
+    background-color: #172b5c;
+}
+
+.botao-dois {
+    background-color: transparent;
+    color: #1E3983;
+    border: 2.5px solid #1E3983;
+}
+
+.botao-dois:hover {
+    background-color: #f0f4f8;
+}
+
+.foto {
+    font-family: 'Instrument Sans', sans-serif;
+    width: 320px;
+    height: 400px;
+    border: 1px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+    font-size: 32px;
+}
+
+.indicadores {
+    background-color: #213d80;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.indicador {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.indicador h3 {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 48px;
+    color: #213d80;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.indicador p {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+}
+
+/* RESPONSIVIDADE BÁSICA GEMINI */
+@media (max-width: 968px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cta-buttons {
+        justify-content: center;
+    }
+    .metrics-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
