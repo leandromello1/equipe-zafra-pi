@@ -179,7 +179,7 @@ body {
 }
 
 .indicadores {
-    background-color: #213d80;
+    background-color: #1E3983;
     padding: 30px 10%;
     display: flex;
     justify-content: center;
@@ -188,44 +188,282 @@ body {
 
 .indicador {
     background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    min-width: 240px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    width: 298px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .indicador h3 {
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    color: #213d80;
-    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    color: #1E3983;
     margin-bottom: 5px;
+    display: flex;
+    line-height: normal;
+    letter-spacing: 1.92px;
 }
 
 .indicador p {
+    display: flex;
+    font-family: 'Instrument Sans', sans-serif;
     font-size: 30px;
-    color: #000000;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #000;
 }
 
-/* RESPONSIVIDADE BÁSICA GEMINI */
-@media (max-width: 968px) {
-    .hero {
+.linha-divisoria {
+    border: 0;
+    border-top: 2px solid #cfcfcf;
+    width: 1040px;
+    margin: 50px auto;
+    border-radius: 5px;
+    margin-bottom: 58
+}
+
+.sobre-titulo {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 4.4px;
+    color: #1E3983;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 72px;
+}
+
+.sobre {
+    padding: 20px 8%;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-texto {
+    width: 1252px;
+    height: 500px;
+}
+
+.sobre-texto h2 {
+    color:#000;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 90px;
+}
+
+.sobre-texto p {
+    color: #000;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.como-funciona {
+    padding: 20px 8%;
+    text-align: center;
+}
+
+.titulo-jornada {
+    color: #000;
+    text-align: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 72px;
+}
+
+.como-funciona-titulo {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 4.4px;
+    color: #1E3983;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 72px;
+}
+
+/*CARDS GEMINI */
+
+.card-container {
+  display: flex;
+  gap: 15px; /* Espaço entre os cards */
+  justify-content: center; /* Centraliza os cards na tela */
+  flex-wrap: wrap; /* Faz os cards irem para baixo em telas pequenas */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo individual de cada Card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 16px; /* Bordas arredondadas externas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave embaixo */
+  padding: 20px;
+  display: flex;
+  width: 298px;
+  height: 288px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  flex: 1 1 200px;
+}
+
+/* Cabeçalho do Card (Número + Título) */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 60px; /* Espaço entre o título e o texto de baixo */
+}
+
+/* O quadradinho azul do número */
+.number {
+    background-color: #1E3983; 
+    color: #FFF;
+    font-weight: 900;
+    font-size: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 6px; /* Leve arredondamento no número */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+  
+/* Título ao lado do número */
+.card-header h3 {
+    color: #1E3983;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.28px;
+}
+
+/* Texto descritivo do card */
+.card-content p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (A MAGICA DA RESPONSIVIDADE) GEMINI
+   ========================================================== */
+
+/* TABLETS (Telas de até 1024px) */
+@media (max-width: 1024px) {
+    .titulo { font-size: 2.3rem; }
+    .sobre-texto h2 { font-size: 32px; }
+    .titulo-jornada { font-size: 34px; }
+}
+
+/* CELULARES GRANDES / TABLETS EM PÉ (Telas de até 768px) */
+@media (max-width: 768px) {
+    /* Navbar vira coluna ou esconde itens excedentes */
+    .navbar {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero vira uma coluna empilhada */
+    .hero {
+        flex-direction: column-reverse; /* Foto embaixo, texto em cima */
+        text-align: center;
+        padding: 40px 5%;
+    }
+    
     .hero-content {
         max-width: 100%;
     }
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+    .diferenciais {
+        grid-template-columns: repeat(2, 1fr); /* Divide em 2 colunas */
+        margin: 30px auto;
     }
-    .cta-buttons {
+
+    .botoes {
         justify-content: center;
     }
-    .metrics-bar {
+
+    /* Sobre vira coluna */
+    .sobre-container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sobre-texto h2 { font-size: 28px; }
+}
+
+/* CELULARES PEQUENOS (Telas de até 480px) */
+@media (max-width: 480px) {
+    .titulo { font-size: 1.8rem; }
+    .parágrafo { font-size: 18px; }
+    
+    .diferenciais {
+        grid-template-columns: 1fr; /* 1 diferencial por linha no mobile */
+    }
+
+    .botoes {
+        flex-direction: column; /* Botões um embaixo do outro */
+        width: 100%;
+    }
+
+    .botao-um, .botao-dois {
+        width: 100%;
+    }
+
+    .sobre-titulo, .como-funciona-titulo {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .titulo-jornada {
+        font-size: 26px;
+    }
+    
+    .indicador p {
+        font-size: 20px;
     }
 }
