@@ -227,6 +227,7 @@ body {
     color: #1E3983;
     border: 2.5px solid #1E3983;
     gap: 25px;
+    text-decoration: none;
 }
 
 .botao-dois:hover { background-color: #f0f4f8; }
@@ -288,8 +289,8 @@ body {
 }
 
 .sobre-texto {
-    width: 1252px;
-    height: 500px;
+    max-width: 1252px;
+    height: auto;
 }
 
 .sobre-texto h2 {
