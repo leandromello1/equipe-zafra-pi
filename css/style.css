@@ -537,58 +537,264 @@ body {
 }
 
 /* ==========================================================
-   MEDIA QUERIES (RESPONSIVIDADE)
+   PÁGINA DO CURSO (ESTILIZAÇÃO ESPECÍFICA)
    ========================================================== */
-@media (max-width: 1200px) {
-    .sobre-nos { width: 100%; }
-    .sobre-img { width: 100%; max-width: 450px; height: auto; }
+.curso-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5%;
+    font-family: 'Instrument Sans', sans-serif;
 }
 
+.programa-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.programa-conteudo {
+    flex: 1.3;
+}
+
+.programa-titulo {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    color: #1E3983;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.programa-titulo .destaque-azul {
+    color: #60A1AF;
+}
+
+.programa-conteudo p {
+    color: #1E3983;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 3px solid #25D366;
+    border-radius: 12px;
+    padding: 15px 25px;
+    color: #25D366;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25D366;
+    color: #ffffff;
+}
+
+.btn-whatsapp i {
+    font-size: 28px;
+}
+
+.curriculo-section {
+    padding: 20px 0;
+}
+
+.curriculo-titulo {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: #1E3983;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.curriculo-titulo span {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.curriculo-subtitulo {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E3983;
+    margin-bottom: 25px;
+}
+
+.curriculo-descricao {
+    font-family: 'Instrument Sans', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 35px;
+}
+
+.modulo-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.modulo-icon {
+    font-size: 45px;
+    color: #1E3983;
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.modulo-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1E3983;
+    line-height: 1.2;
+}
+
+.modulo-item p span {
+    margin-right: 5px;
+}
+
+.tag-online {
+    color: #60A1AF;
+    font-weight: 900;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (RESPONSIVIDADE COMPLETA E ATUALIZADA)
+   ========================================================== */
+
+/* TELAS DE ATÉ 1200px (Desktops pequenos e ajustes de quebra) */
+@media (max-width: 1200px) {
+    .sobre-nos { 
+        width: 100%; 
+        padding: 40px 5%;
+    }
+    .sobre-img { 
+        width: 100%; 
+        max-width: 450px; 
+        height: auto; 
+    }
+    .sobre-texto {
+        max-width: 100%;
+    }
+    .modulos-grid {
+        column-gap: 40px;
+    }
+}
+
+/* TABLETS EM MODO PAISAGEM / DESKTOPS PEQUENOS (Telas de até 1024px) */
 @media (max-width: 1024px) {
+    /* Cabeçalho */
     .header-main { gap: 20px; }
     .logo { width: 320px; height: auto; }
     .nav-links { gap: 25px; }
+    
+    /* Hero e Estrutura Geral */
     .titulo-hero { font-size: 2.3rem; }
     .hero { padding: 40px 5%; }
     .sobre-conteudo { gap: 30px; }
+    
+    /* Títulos Gerais e Páginas Internas */
     .main-title { font-size: 48px; margin-bottom: 40px; }
-    .titulo-sobre-nos, .sobre-block .titulo, .titulo { font-size: 32px; margin-bottom: 30px; }
-    .sobre-text-block p, .sobre-block p { font-size: 20px; }
+    .titulo, .titulo-sobre-nos, .sobre-block .titulo { font-size: 32px; margin-bottom: 30px; }
+    .sobre-text-block p, .sobre-block p, .sobre-texto p { font-size: 20px; }
+    .sobre-texto h2 { font-size: 36px; margin-bottom: 40px; }
+
+    /* Página do Curso */
+    .programa-titulo { font-size: 42px; margin-bottom: 25px; }
+    .programa-conteudo p, .curriculo-descricao { font-size: 18px; }
+    .curriculo-subtitulo { font-size: 38px; }
+    .modulo-item p { font-size: 24px; }
+    .modulo-icon { font-size: 38px; width: 40px; }
 }
 
+/* CELULARES GRANDES / TABLETS EM MODO RETRATO (Telas de até 768px) */
 @media (max-width: 768px) {
-    .header-main, .nav-container, .hero { flex-direction: column; text-align: center; }
+    /* Cabeçalho / Navbar */
+    .header-main, .nav-container { flex-direction: column; text-align: center; }
     .header-main { padding: 20px 5%; gap: 15px; }
-    .logo { width: 240px; }
+    .logo { width: 240px; height: auto; }
     .nav-container { gap: 20px; }
     .nav-links { gap: 20px; justify-content: center; }
     .btn-login { width: 100%; max-width: 192px; }
-    .hero { flex-direction: column-reverse; padding: 30px 5%; }
+    
+    /* Hero */
+    .hero { flex-direction: column-reverse; padding: 30px 5%; text-align: center; }
     .hero-content { max-width: 100%; }
     .parágrafo { font-size: 20px; }
     .botoes { justify-content: center; flex-wrap: wrap; }
     .botao-um, .botao-dois { width: 100%; max-width: 298px; height: auto; padding: 20px; }
     .diferenciais { grid-template-columns: repeat(2, 1fr); width: 100%; height: auto; gap: 20px; }
-    .indicadores, .sobre-conteudo { flex-direction: column; align-items: center; }
-    .indicadores { gap: 20px; }
+    
+    /* Indicadores */
+    .indicadores { flex-direction: column; align-items: center; gap: 20px; }
     .indicador { width: 100%; max-width: 298px; }
+    
+    /* Sobre Nós Principal */
+    .sobre-conteudo { flex-direction: column; align-items: center; }
     .sobre-text-block { width: 100%; text-align: justify; }
     .sobre-imagem { width: 100%; margin-top: 20px; }
     .sobre-img { max-width: 100%; height: auto; }
+    
+    /* Página do Curso (Estrutura e Grade) */
+    .programa-section { flex-direction: column; gap: 30px; text-align: center; }
+    .programa-conteudo p { text-align: justify; }
+    .btn-whatsapp { width: 100%; justify-content: center; font-size: 18px; padding: 12px 20px; }
+    .btn-whatsapp i { font-size: 24px; }
+    .modulos-grid { grid-template-columns: 1fr; row-gap: 25px; } /* Transforma em 1 coluna */
+    .modulo-item { gap: 20px; }
+    .modulo-item p { font-size: 22px; }
+    .modulo-icon { font-size: 35px; }
+
+    /* Divisórias e Elementos de Borda */
     .linha-divisoria, .footer-divisória { width: 90% !important; margin: 40px auto; }
+    
+    /* Grid de Parceiros */
     .parceiros-grid { padding: 0 5%; }
     .parceiro-card { width: calc(50% - 10px); height: 110px; }
+    
+    /* Rodapé */
     .footer-container { flex-direction: column; gap: 30px; }
     .footer-column { width: 100%; }
     .footer-column ul li { white-space: normal; }
 }
 
+/* CELULARES PEQUENOS (Telas de até 480px) */
 @media (max-width: 480px) {
+    /* Ajustes Gerais de Tipografia */
     .main-title { font-size: 36px; letter-spacing: 1px; }
-    .titulo-sobre-nos, .sobre-block .titulo, .titulo { font-size: 24px; letter-spacing: 2px; }
-    .sobre-text-block p, .sobre-block p { font-size: 18px; }
     .titulo-hero { font-size: 1.8rem; }
+    .titulo, .titulo-sobre-nos, .sobre-block .titulo, .sobre-texto h2 { font-size: 24px; letter-spacing: 2px; }
+    .sobre-text-block p, .sobre-block p, .sobre-texto p { font-size: 18px; }
+    
+    /* Layouts Grid e Flex em Mobile Puro */
     .diferenciais { grid-template-columns: 1fr; }
     .botoes { flex-direction: column; align-items: center; }
     .botao-um, .botao-dois, .parceiro-card { width: 100%; }
+    
+    /* Página do Curso Mobile */
+    .programa-titulo { font-size: 32px; }
+    .curriculo-titulo { font-size: 32px; }
+    .curriculo-subtitulo { font-size: 28px; }
+    .modulo-item p { font-size: 18px; }
+    .modulo-icon { font-size: 28px; width: 32px; }
 }
