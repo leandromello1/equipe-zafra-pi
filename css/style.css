@@ -72,6 +72,11 @@ body {
    height: 79px;
 }
 
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
 .nav-container, .nav-links {
     display: flex;
     align-items: center;
@@ -128,23 +133,29 @@ body {
 }
 
 /* ==========================================================
-   HOME: HERO SECTON
+   HOME: HERO SECTION
    ========================================================== */
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 50px 8%;
-    flex: 1;
-    gap: 40px;
+    align-items: stretch; 
+    padding: 0 0 0 8%;    
+    width: 100%;
+    overflow: hidden;    
 }
 
-.hero-content { max-width: 60%; }
+.hero-content {
+    max-width: 50%;
+    padding: 60px 0;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .titulo-hero {
-    font-size: 2.8rem;
+    font-size: 64px;
     color: #1E3983;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -233,14 +244,20 @@ body {
 .botao-dois:hover { background-color: #f0f4f8; }
 
 .foto {
-    width: 320px;
-    height: 400px;
-    border: 1px solid #707070;
+    flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; 
     align-items: center;
-    color: #707070;
-    font-size: 32px;
+    max-width: 50%;
+}
+
+.foto img {
+    width: 100%;
+    height: 98%;
+    max-height: 688px;   
+    object-fit: cover;   
+    object-position: left center; 
+    display: block;
 }
 
 /* ==========================================================
@@ -279,31 +296,62 @@ body {
     color: #000;
 }
 
-.sobre { padding: 20px 8%; }
+/* ==========================================================
+   SEÇÃO SOBRE O PROJETO
+   ========================================================== */
+.sobre {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre .titulo {
+    margin-bottom: 48px !important;
+    display: block;
+    text-align: center;
+}
 
 .sobre-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    align-items: center;    
+    width: 85%;
+    max-width: 1140px;      
+    margin: 0 auto;
+    gap: 80px;              
 }
 
 .sobre-texto {
-    max-width: 1252px;
-    height: auto;
+    flex: 1;                
+    text-align: left;
+    max-width: 680px;       
 }
 
 .sobre-texto h2 {
-    color: #000;
-    font-size: 48px;
+    color: #000000;
+    font-size: 38px;
     font-weight: 700;
-    margin-bottom: 90px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .sobre-texto p {
-    color: #000;
+    color: #000000;
+    font-family: "Instrument Sans", sans-serif;
     font-size: 24px;
-    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;   
+}
+
+.sobre-texto p:last-child {
+    margin-bottom: 0;
 }
 
 /* ==========================================================
@@ -537,7 +585,7 @@ body {
 }
 
 /* ==========================================================
-   PÁGINA DO CURSO (ESTILIZAÇÃO ESPECÍFICA)
+   PÁGINA DO CURSO
    ========================================================== */
 .curso-main-container {
     max-width: 1200px;
@@ -548,14 +596,18 @@ body {
 
 .programa-section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 40px;
+    align-items: flex-start; /* Alinha o texto e imagem pelo topo */
+    gap: 80px;              
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .programa-conteudo {
-    flex: 1.3;
+    flex: 1;
+    max-width: 720px;       
 }
 
 .programa-titulo {
@@ -565,6 +617,7 @@ body {
     color: #1E3983;
     margin-bottom: 35px;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 .programa-titulo .destaque-azul {
@@ -577,8 +630,24 @@ body {
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 25px;
-    text-align: justify;
+    text-align: left; /* Garante alinhamento limpo sem buracos */
     font-family: 'Instrument Sans', sans-serif;
+}
+
+.programa-imagem-container {
+    width: 366px;           
+    height: 488px;          
+    flex-shrink: 0;         
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.programa-imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .btn-whatsapp {
@@ -605,6 +674,7 @@ body {
     font-size: 28px;
 }
 
+/* Elementos do Currículo */
 .curriculo-section {
     padding: 20px 0;
 }
@@ -679,10 +749,10 @@ body {
 }
 
 /* ==========================================================
-   MEDIA QUERIES (RESPONSIVIDADE COMPLETA E ATUALIZADA)
+   MEDIA QUERIES (RESPONSIVIDADE)
    ========================================================== */
 
-/* TELAS DE ATÉ 1200px (Desktops pequenos e ajustes de quebra) */
+/* TELAS DE ATÉ 1200px */
 @media (max-width: 1200px) {
     .sobre-nos { 
         width: 100%; 
@@ -699,27 +769,26 @@ body {
     .modulos-grid {
         column-gap: 40px;
     }
+    .programa-section {
+        gap: 40px;
+    }
 }
 
-/* TABLETS EM MODO PAISAGEM / DESKTOPS PEQUENOS (Telas de até 1024px) */
+/* TABLETS EM MODO PAISAGEM (Telas de até 1024px) */
 @media (max-width: 1024px) {
-    /* Cabeçalho */
     .header-main { gap: 20px; }
     .logo { width: 320px; height: auto; }
     .nav-links { gap: 25px; }
     
-    /* Hero e Estrutura Geral */
     .titulo-hero { font-size: 2.3rem; }
     .hero { padding: 40px 5%; }
     .sobre-conteudo { gap: 30px; }
     
-    /* Títulos Gerais e Páginas Internas */
     .main-title { font-size: 48px; margin-bottom: 40px; }
     .titulo, .titulo-sobre-nos, .sobre-block .titulo { font-size: 32px; margin-bottom: 30px; }
     .sobre-text-block p, .sobre-block p, .sobre-texto p { font-size: 20px; }
     .sobre-texto h2 { font-size: 36px; margin-bottom: 40px; }
 
-    /* Página do Curso */
     .programa-titulo { font-size: 42px; margin-bottom: 25px; }
     .programa-conteudo p, .curriculo-descricao { font-size: 18px; }
     .curriculo-subtitulo { font-size: 38px; }
@@ -729,15 +798,39 @@ body {
 
 /* CELULARES GRANDES / TABLETS EM MODO RETRATO (Telas de até 768px) */
 @media (max-width: 768px) {
-    /* Cabeçalho / Navbar */
-    .header-main, .nav-container { flex-direction: column; text-align: center; }
-    .header-main { padding: 20px 5%; gap: 15px; }
-    .logo { width: 240px; height: auto; }
-    .nav-container { gap: 20px; }
-    .nav-links { gap: 20px; justify-content: center; }
-    .btn-login { width: 100%; max-width: 192px; }
+    .header-main { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 20px 5%; 
+        gap: 15px; 
+        align-items: center; /* Centraliza verticalmente as caixas no meio */
+    }
+    .logo { 
+        width: 240px; 
+        height: auto; 
+        margin: 0 auto; /* Força a centralização horizontal absoluta da caixa da logo */
+        display: block;
+    }
+    .logo img {
+        margin: 0 auto; /* Centraliza a imagem internamente */
+        display: block;
+    }
+    .nav-container { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 20px; 
+        width: 100%;
+    }
+    .nav-links { 
+        gap: 20px; 
+        justify-content: center; 
+    }
+    .btn-login { 
+        width: 100%; 
+        max-width: 192px; 
+        margin: 0 auto; 
+    }
     
-    /* Hero */
     .hero { flex-direction: column-reverse; padding: 30px 5%; text-align: center; }
     .hero-content { max-width: 100%; }
     .parágrafo { font-size: 20px; }
@@ -745,34 +838,47 @@ body {
     .botao-um, .botao-dois { width: 100%; max-width: 298px; height: auto; padding: 20px; }
     .diferenciais { grid-template-columns: repeat(2, 1fr); width: 100%; height: auto; gap: 20px; }
     
-    /* Indicadores */
     .indicadores { flex-direction: column; align-items: center; gap: 20px; }
     .indicador { width: 100%; max-width: 298px; }
     
-    /* Sobre Nós Principal */
     .sobre-conteudo { flex-direction: column; align-items: center; }
     .sobre-text-block { width: 100%; text-align: justify; }
     .sobre-imagem { width: 100%; margin-top: 20px; }
     .sobre-img { max-width: 100%; height: auto; }
     
-    /* Página do Curso (Estrutura e Grade) */
-    .programa-section { flex-direction: column; gap: 30px; text-align: center; }
-    .programa-conteudo p { text-align: justify; }
+    /* Estrutura do Curso Mobile */
+    .programa-section { 
+        flex-direction: column; 
+        gap: 30px; 
+        text-align: center; 
+    }
+    .programa-conteudo {
+        max-width: 100%;
+    }
+    .programa-conteudo p { 
+        text-align: left; /* Mantém sem buracos no mobile também */
+    }
+    
+    .programa-imagem-container {
+        width: 100%;
+        max-width: 366px;
+        height: auto;
+        aspect-ratio: 366 / 488;
+        margin: 0 auto;
+    }
+    
     .btn-whatsapp { width: 100%; justify-content: center; font-size: 18px; padding: 12px 20px; }
     .btn-whatsapp i { font-size: 24px; }
-    .modulos-grid { grid-template-columns: 1fr; row-gap: 25px; } /* Transforma em 1 coluna */
+    .modulos-grid { grid-template-columns: 1fr; row-gap: 25px; } 
     .modulo-item { gap: 20px; }
     .modulo-item p { font-size: 22px; }
     .modulo-icon { font-size: 35px; }
 
-    /* Divisórias e Elementos de Borda */
     .linha-divisoria, .footer-divisória { width: 90% !important; margin: 40px auto; }
     
-    /* Grid de Parceiros */
     .parceiros-grid { padding: 0 5%; }
     .parceiro-card { width: calc(50% - 10px); height: 110px; }
     
-    /* Rodapé */
     .footer-container { flex-direction: column; gap: 30px; }
     .footer-column { width: 100%; }
     .footer-column ul li { white-space: normal; }
@@ -780,18 +886,15 @@ body {
 
 /* CELULARES PEQUENOS (Telas de até 480px) */
 @media (max-width: 480px) {
-    /* Ajustes Gerais de Tipografia */
     .main-title { font-size: 36px; letter-spacing: 1px; }
     .titulo-hero { font-size: 1.8rem; }
     .titulo, .titulo-sobre-nos, .sobre-block .titulo, .sobre-texto h2 { font-size: 24px; letter-spacing: 2px; }
     .sobre-text-block p, .sobre-block p, .sobre-texto p { font-size: 18px; }
     
-    /* Layouts Grid e Flex em Mobile Puro */
     .diferenciais { grid-template-columns: 1fr; }
     .botoes { flex-direction: column; align-items: center; }
     .botao-um, .botao-dois, .parceiro-card { width: 100%; }
     
-    /* Página do Curso Mobile */
     .programa-titulo { font-size: 32px; }
     .curriculo-titulo { font-size: 32px; }
     .curriculo-subtitulo { font-size: 28px; }
