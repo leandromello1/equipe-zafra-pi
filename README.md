@@ -236,8 +236,7 @@ Branco (#FFFFFF)
 Preto (#000000)
 
 Tipografia:
-Instrument Sans
-Roboto
+Instrument Sans, Roboto
 
 # 10. Protótipo
 Link Protótipo - https://www.figma.com/design/LeJFP9L6ZnqMeJ6t9N9exC/Portal-do-aluno-zafra?node-id=0-1&t=No13j89CUywRDGzP-1
