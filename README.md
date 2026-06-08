@@ -46,10 +46,11 @@ Com base nisso, o sistema busca:
 Criar uma plataforma website que seja gratuita e voltada à educação, captação e inclusão de pessoas, realocando-as para o mercado de trabalho.  Criação de um site básico, bem elaborado, responsivo e funcional para poder gerenciar todas as etapas da capacitação.
 
 ## • Metodologia
-(Que métodos, tecnologias, modelos de processo, ferramentas irá utilizar?  
-Responde à pergunta: Como? Com o que? Onde? Quando?)  
+O desenvolvimento seguirá uma abordagem incremental, acompanhando os semestres do curso e as sprints do P.I. O protótipo inicial será um site responsivo, baseado nos conhecimentos adquiridos em sala de aula, contendo funcionalidades como login de aluno, funcionário e administrador, gestão de alunos e controle de materiais de sala de aula. 
 
-O desenvolvimento seguirá uma abordagem incremental, acompanhando os semestres do curso e sprints do P.I. O protótipo inicial será um site responsivo, baseado em materiais e aprendizagens em sala de aula, e terá como principais funções o login de aluno, funcionário ou administrador; gestão de alunos e controle de materiais de sala de aula.
+Para o desenvolvimento do projeto serão utilizadas ferramentas como Figma para prototipação e design das interfaces, Visual Studio Code para programação e GitHub para versionamento do código. As principais tecnologias utilizadas serão HTML5, CSS3, Bootstrap e JavaScript para o desenvolvimento web. 
+
+O projeto seguirá um modelo de desenvolvimento incremental, permitindo melhorias contínuas durante cada etapa do P.I.
 
 # 2. Requisitos
 
@@ -149,67 +150,79 @@ RNF8 – Desenvolvimento em módulos
 <p>O sistema deve ser desenvolvido de forma modular para facilitar manutenção.</p>
 
 # 3. Modelo de casos de uso
+Não presente nesta etapa do P.I. no primeiro semestre.
 
 # 4. Modelo do banco de dados
-(Modelo conceitual, Modelo lógico, Físico)
+Não presente nesta etapa do P.I. no primeiro semestre.
 
 # 5. Banco de dados
+Não presente nesta etapa do P.I. no primeiro semestre.
 
 # 6. Diagrama de classes
+Não presente nesta etapa do P.I. no primeiro semestre.
 
 # 7. Estudo de viabilidade
+<strong>Viabilidade Operacional: </strong>
 
-<strong>- Análise:</strong>
-Criaremos um sistema como projeto universitário com parceria com a Zafra. Todos os recursos serão fornecidos pela Fatec. 
+O projeto será desenvolvido em sprints conforme as entregas incrementais por semestre do P.I., com divisão de tarefas entre os cinco integrantes. A metodologia ágil garante essas entregas parciais e o controle de progresso contínuo. 
 
-<strong>- Viabilidade de Mercado:</strong>
-Temos parceria com uma empresa já estabelecida, então não precisamos nos preocupar com a viabilidade de mercado do produto pois essa empresa é nosso cliente. 
+<strong>Viabilidade de Mercado: </strong>
 
-<strong>- Viabilidade Técnica:</strong>
-Já temos uma equipe formada e a Fatec fornecerá os recursos necessários para a criação e desenvolvimento do programa. 
+O projeto possui viabilidade de mercado por ser uma plataforma desenvolvida especificamente para atender às necessidades da instituição cliente, oferecendo funcionalidades personalizadas para gerenciamento da escola. Diferente de plataformas genéricas, o sistema será adaptado conforme as demandas reais da instituição, tornando o gerenciamento mais organizado, acessível e eficiente. 
 
-<strong>- Viabilidade Financeira:</strong>
-Não haverá fonte de receita com a criação do projeto, porém qualquer custo será cobrado pela Fatec. 
+<strong>Viabilidade Técnica: </strong>
 
-<strong>- Riscos:</strong>
-Não haverá riscos para a criação do projeto.
+Nosso produto é viável tecnicamente pois a equipe possui conhecimento em HTML, CSS, JavaScript e frameworks modernos. Utilizando ferramentas gratuitas e acessíveis, como VSCode, Figma e GitHub, tornamos o desenvolvimento viável dentro do contexto acadêmico. 
+
+<strong>Viabilidade Financeira: </strong>
+
+O projeto é viável financeiramente falando pois o custo de desenvolvimento é zero e trata-se de ambiente acadêmico. A hospedagem inicial será feita em serviços gratuitos, com escalabilidade paga somente em caso de adoção real pela escola.
 
 # 8. Regras de negócio (Modelo canvas)
 
-<strong>- O que foi elaborado?</strong>
+O que foi elaborado? 
 
-Proposta de valor:
-Desenvolver um sistema para cadastrar alunos e disponibilizar ferramentas para ajudar a comunicação entre professores e estudantes, agindo como um portal para alunos. 
+<strong>Proposta de valor: </strong>
 
-<strong>- Para quem foi elaborado?</strong>
+Entregamos um sistema personalizado, único e atrativo, desenvolvido especialmente para atender às necessidades do cliente, facilitando a comunicação, o acesso às informações e o acompanhamento das atividades de forma prática, moderna e eficiente, centralizando a experiência educacional da escola em uma plataforma digital, acessível, intuitiva e organizada. 
 
-Segmento de clientes:
-Jovens e interessados com poucas condições financeiras em busca de um curso profissionalizante gratuito para entrar no mercado de trabalho. 
+Para quem foi elaborado? 
 
-Canais:
-O sistema deve servir como canal de comunicação entre a empresa e os usuários. 
+<strong>Segmento de clientes: </strong>
 
-Relacionamento com clientes:
-Garantir ensino profissionalizante e condições básicas para os alunos, com o objetivo de colocar essas pessoas no mercado de trabalho. 
+Jovens em busca do primeiro emprego e pessoas que desejam se qualificar ou se recolocar no mercado de trabalho, especialmente aquelas em situação de vulnerabilidade social ou com poucas condições financeiras para custear um novo curso. O projeto também é destinado a qualquer pessoa interessada em adquirir conhecimento profissionalizante e ampliar suas oportunidades de estudo e emprego. 
 
-<strong>- Como foi elaborado?</strong>
+<strong>Canais: </strong>
 
-Atividades principais:
-Desenvolver um portal do aluno, com sistema de cadastro e ferramentas para auxiliar o ensino. 
+Os canais para alcançar os clientes serão principalmente as redes sociais da escola Zafra e de todas as empresas parceiras, além da divulgação boca a boca, permitindo que as informações sobre os cursos e oportunidades alcancem cada vez mais pessoas da comunidade. 
 
-Parcerias principais:
-Fatec Jahu 
+<strong>Relacionamento com clientes: </strong>
 
-Recursos Principais:
-Computadores e internet fornecidos pela Fatec e máquinas (notebook/pc) domésticas voltadas para uso pessoal. 
+Garantir suporte educacional e acesso simplificado aos cursos profissionalizantes, promovendo inclusão social, acompanhamento dos alunos e oportunidades de ingresso no mercado de trabalho. 
 
-<strong>- Quanto custará?</strong>
+Como foi elaborado? 
 
-Fontes de receita:
-Esse é um trabalho acadêmico voluntário e não haverá fonte de receita.
+<strong>Atividades principais: </strong>
 
-Estrutura de custos:
-Não haverá custos pois o trabalho é voluntário e os recursos são fornecidos pela Fatec.
+Pesquisa e levantamento de requisitos, criação de protótipos das interfaces, desenvolvimento das páginas e funcionalidades do sistema, testes de usabilidade, correção de erros e documentação do projeto. 
+
+<strong>Parcerias principais: </strong>
+
+Fatec Jahu, Zafra, Raide Jahu, Grupo Jauense, Valseg, Elringklinger, Limer Stamp, Mais RH, Papelaria Jr, Santo Antonio. 
+
+<strong>Recursos Principais: </strong>
+
+Computadores e internet disponibilizados pela faculdade, notebooks e computadores pessoais da equipe de desenvolvimento, sistema web para testes e validação do sistema, ferramentas de desenvolvimento como VSCode e Figma, conhecimento da equipe de desenvolvimento em linguagens de programação. 
+
+Quanto custará? 
+
+<strong>Fontes de receita: </strong>
+
+O projeto possui caráter acadêmico, não apresentando fontes de receita. Futuramente, poderão existir parcerias com empresas locais e instituições apoiadoras, assim como possíveis doações e parcerias educacionais. 
+
+<strong>Estrutura de custos: </strong>
+
+Hospedagem do sistema, internet e infraestrutura, manutenção e atualização da plataforma, recursos computacionais utilizados no desenvolvimento, horas de trabalho da equipe de desenvolvimento.
 
 # 9. Design
 Paleta de cor:
@@ -227,6 +240,7 @@ Instrument Sans
 Roboto
 
 # 10. Protótipo
-(Gere um protótipo funcional na ferramenta que se sentir mais confortável (Figma, por exemplo) e apresente aqui, indicando o link).
+Link Protótipo - https://www.figma.com/design/LeJFP9L6ZnqMeJ6t9N9exC/Portal-do-aluno-zafra?node-id=0-1&t=No13j89CUywRDGzP-1
 
 # 11. Aplicação
+Link Aplicação - https://github.com/leandromello1/Equipe-Zafra-PI/tree/master
